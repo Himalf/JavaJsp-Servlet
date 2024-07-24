@@ -26,8 +26,7 @@ public class DeleteServlet extends HttpServlet {
 		int res=stmt.executeUpdate();
 		
 		if(res>0) {
-			RequestDispatcher rd = request.getRequestDispatcher("getData.jsp");
-			rd.forward(request, response);
+			response.sendRedirect("MyWebServlet");
 		}
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block

@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-  <display-name>servletdatabase</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>MyWebServlet</display-name>
-    <servlet-name>MyWebServlet</servlet-name>
-    <servlet-class>MyWebServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MyWebServlet</servlet-name>
-    <url-pattern>/MyWebServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>DeleteServlet</display-name>
-    <servlet-name>DeleteServlet</servlet-name>
-    <servlet-class>DeleteServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>DeleteServlet</servlet-name>
-    <url-pattern>/DeleteServlet</url-pattern>
-  </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	id="WebApp_ID" version="6.0">
+	<display-name>servletdatabase</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>MyWebServlet</display-name>
+		<servlet-name>MyWebServlet</servlet-name>
+		<servlet-class>MyWebServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyWebServlet</servlet-name>
+		<url-pattern>/MyWebServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>DeleteServlet</display-name>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
