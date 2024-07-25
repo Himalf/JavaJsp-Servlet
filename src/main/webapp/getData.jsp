@@ -57,7 +57,13 @@
                             <input type="hidden" name="id" value="${Student.id}">
                             <input type="submit" value="Delete">
                         </form>
-                        <button>Update</button>
+                        <form action="UpdateData" method="get">
+                         <input type="hidden" name="id" value="${Student.id}">
+                        <input type="hidden" name="name" value="${Student.name}">
+                            <input type="hidden" name="address" value="${Student.address}">
+                            <input type="hidden" name="age" value="${Student.age}">
+                                                       <input type="submit" value="Update">
+                        </form>
                     </div>
                 </td>
             </tr>
