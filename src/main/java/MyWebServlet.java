@@ -33,8 +33,7 @@ public class MyWebServlet extends HttpServlet {
             stmt.setString(4, age);
             int res = stmt.executeUpdate();
             if (res > 0) {
-                RequestDispatcher rd = request.getRequestDispatcher("index.html");
-                rd.forward(request, response);
+                response.sendRedirect("MyWebServlet");
             } else {
                 response.getWriter().println("Cannot post data");
             }

@@ -14,6 +14,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 1000px;
+            
         }
         h1 {
             text-align: center;
@@ -51,7 +52,7 @@
                 <td><c:out value="${Student.name}"/></td>
                 <td><c:out value="${Student.address}"/></td>
                 <td><c:out value="${Student.age}"/></td>
-                <td>
+                <td style="display: flex; justify-content: center; align-items: center; width: 100px;">
                     <div>
                         <form action="DeleteServlet" method="post">
                             <input type="hidden" name="id" value="${Student.id}">
@@ -59,10 +60,8 @@
                         </form>
                         <form action="UpdateData" method="get">
                          <input type="hidden" name="id" value="${Student.id}">
-                        <input type="hidden" name="name" value="${Student.name}">
-                            <input type="hidden" name="address" value="${Student.address}">
-                            <input type="hidden" name="age" value="${Student.age}">
-                                                       <input type="submit" value="Update">
+                        
+                             <input type="submit" value="Update">
                         </form>
                     </div>
                 </td>

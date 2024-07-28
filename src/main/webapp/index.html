@@ -4,19 +4,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Student Form</title>
+	<style type="text/css">
+	div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: full;
+	}
+	form {
+	width: fit;
+	border:2px solid black;
+	padding: 20px;
+	margin-top: 100px
+}
+	</style>
 </head>
 
 <body>
-	<h1>Student Form</h1>
+	<h1 style="text-align: center;">Student Form</h1>
+	<div>
 	<form action="MyWebServlet" method="post">
 		Id: <input type="text" name="id"><br>
 		Name: <input type="text" name="name"><br>
 		Address: <input type="text" name="address"><br>
 		Age: <input type="text" name="age"><br>
 		<input type="submit" value="Submit">
+		<a href="MyWebServlet">Get Data</a>
 	</form>
+	</div>
 	
-	<a href="MyWebServlet">Get Data</a>
+	
 </body>
 
 </html>

@@ -31,8 +31,7 @@ public class UpdateServlet extends HttpServlet {
 			st.setString(4, id);
 			st.executeUpdate();
 
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
-			rd.forward(request, response);
+			response.sendRedirect("MyWebServlet");
 			
 		} catch (Exception e) {
 			// TODO: handle exception
